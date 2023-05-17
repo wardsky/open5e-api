@@ -113,6 +113,7 @@ class SpellFilter(django_filters.FilterSet):
             'requires_somatic_components': ['exact'],
             'requires_material_components': ['exact'],
             'casting_time': ['iexact', 'exact', 'in', ],
+            'material':['iexact','icontains'],
             'dnd_class': ['iexact', 'exact', 'in', 'icontains'],
             'spell_lists' : ['exact'],
             'document__slug': ['iexact', 'exact', 'in', ]
