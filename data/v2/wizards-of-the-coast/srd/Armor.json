@@ -3,7 +3,6 @@
   "model": "api_v2.armor",
   "pk": "breastplate",
   "fields": {
-    "name": "Breastplate",
     "document": "srd",
     "grants_stealth_disadvantage": false,
     "strength_score_required": null,
@@ -16,7 +15,6 @@
   "model": "api_v2.armor",
   "pk": "chain-mail",
   "fields": {
-    "name": "Chain mail",
     "document": "srd",
     "grants_stealth_disadvantage": true,
     "strength_score_required": 13,
@@ -29,7 +27,6 @@
   "model": "api_v2.armor",
   "pk": "chain-shirt",
   "fields": {
-    "name": "Chain shirt",
     "document": "srd",
     "grants_stealth_disadvantage": false,
     "strength_score_required": null,
@@ -42,7 +39,6 @@
   "model": "api_v2.armor",
   "pk": "half-plate",
   "fields": {
-    "name": "Half plate",
     "document": "srd",
     "grants_stealth_disadvantage": true,
     "strength_score_required": null,
@@ -55,7 +51,6 @@
   "model": "api_v2.armor",
   "pk": "hide",
   "fields": {
-    "name": "Hide",
     "document": "srd",
     "grants_stealth_disadvantage": false,
     "strength_score_required": null,
@@ -68,7 +63,6 @@
   "model": "api_v2.armor",
   "pk": "leather",
   "fields": {
-    "name": "Leather",
     "document": "srd",
     "grants_stealth_disadvantage": false,
     "strength_score_required": null,
@@ -81,7 +75,6 @@
   "model": "api_v2.armor",
   "pk": "padded",
   "fields": {
-    "name": "Padded",
     "document": "srd",
     "grants_stealth_disadvantage": true,
     "strength_score_required": null,
@@ -94,7 +87,6 @@
   "model": "api_v2.armor",
   "pk": "plate",
   "fields": {
-    "name": "Plate",
     "document": "srd",
     "grants_stealth_disadvantage": true,
     "strength_score_required": 15,
@@ -107,7 +99,6 @@
   "model": "api_v2.armor",
   "pk": "ring-mail",
   "fields": {
-    "name": "Ring mail",
     "document": "srd",
     "grants_stealth_disadvantage": true,
     "strength_score_required": null,
@@ -120,7 +111,6 @@
   "model": "api_v2.armor",
   "pk": "scale-mail",
   "fields": {
-    "name": "Scale mail",
     "document": "srd",
     "grants_stealth_disadvantage": true,
     "strength_score_required": null,
@@ -133,7 +123,6 @@
   "model": "api_v2.armor",
   "pk": "splint",
   "fields": {
-    "name": "Splint",
     "document": "srd",
     "grants_stealth_disadvantage": true,
     "strength_score_required": 15,
@@ -146,7 +135,6 @@
   "model": "api_v2.armor",
   "pk": "studded-leather",
   "fields": {
-    "name": "Studded leather",
     "document": "srd",
     "grants_stealth_disadvantage": false,
     "strength_score_required": null,

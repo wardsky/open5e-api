@@ -3,7 +3,6 @@
   "model": "api_v2.weapon",
   "pk": "battleaxe",
   "fields": {
-    "name": "Battleaxe",
     "document": "srd",
     "damage_type": "slashing",
     "damage_dice": "1d8",
@@ -28,7 +27,6 @@
   "model": "api_v2.weapon",
   "pk": "blowgun",
   "fields": {
-    "name": "Blowgun",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1",
@@ -53,7 +51,6 @@
   "model": "api_v2.weapon",
   "pk": "club",
   "fields": {
-    "name": "Club",
     "document": "srd",
     "damage_type": "bludgeoning",
     "damage_dice": "1d4",
@@ -78,7 +75,6 @@
   "model": "api_v2.weapon",
   "pk": "crossbow-hand",
   "fields": {
-    "name": "Crossbow, hand",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d6",
@@ -103,7 +99,6 @@
   "model": "api_v2.weapon",
   "pk": "crossbow-heavy",
   "fields": {
-    "name": "Crossbow, heavy",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d10",
@@ -128,7 +123,6 @@
   "model": "api_v2.weapon",
   "pk": "crossbow-light",
   "fields": {
-    "name": "Crossbow, light",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d8",
@@ -153,7 +147,6 @@
   "model": "api_v2.weapon",
   "pk": "dagger",
   "fields": {
-    "name": "Dagger",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d4",
@@ -178,7 +171,6 @@
   "model": "api_v2.weapon",
   "pk": "dart",
   "fields": {
-    "name": "Dart",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d4",
@@ -203,7 +195,6 @@
   "model": "api_v2.weapon",
   "pk": "flail",
   "fields": {
-    "name": "Flail",
     "document": "srd",
     "damage_type": "bludgeoning",
     "damage_dice": "1d8",
@@ -228,7 +219,6 @@
   "model": "api_v2.weapon",
   "pk": "glaive",
   "fields": {
-    "name": "Glaive",
     "document": "srd",
     "damage_type": "slashing",
     "damage_dice": "1d10",
@@ -253,7 +243,6 @@
   "model": "api_v2.weapon",
   "pk": "greataxe",
   "fields": {
-    "name": "Greataxe",
     "document": "srd",
     "damage_type": "slashing",
     "damage_dice": "1d12",
@@ -278,7 +267,6 @@
   "model": "api_v2.weapon",
   "pk": "greatclub",
   "fields": {
-    "name": "Greatclub",
     "document": "srd",
     "damage_type": "bludgeoning",
     "damage_dice": "1d8",
@@ -303,7 +291,6 @@
   "model": "api_v2.weapon",
   "pk": "greatsword",
   "fields": {
-    "name": "Greatsword",
     "document": "srd",
     "damage_type": "slashing",
     "damage_dice": "2d6",
@@ -328,7 +315,6 @@
   "model": "api_v2.weapon",
   "pk": "halberd",
   "fields": {
-    "name": "Halberd",
     "document": "srd",
     "damage_type": "slashing",
     "damage_dice": "1d10",
@@ -353,7 +339,6 @@
   "model": "api_v2.weapon",
   "pk": "handaxe",
   "fields": {
-    "name": "Handaxe",
     "document": "srd",
     "damage_type": "slashing",
     "damage_dice": "1d6",
@@ -378,7 +363,6 @@
   "model": "api_v2.weapon",
   "pk": "javelin",
   "fields": {
-    "name": "Javelin",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d6",
@@ -403,7 +387,6 @@
   "model": "api_v2.weapon",
   "pk": "lance",
   "fields": {
-    "name": "Lance",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d12",
@@ -428,7 +411,6 @@
   "model": "api_v2.weapon",
   "pk": "light-hammer",
   "fields": {
-    "name": "Light hammer",
     "document": "srd",
     "damage_type": "bludgeoning",
     "damage_dice": "1d4",
@@ -453,7 +435,6 @@
   "model": "api_v2.weapon",
   "pk": "longbow",
   "fields": {
-    "name": "Longbow",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d8",
@@ -478,7 +459,6 @@
   "model": "api_v2.weapon",
   "pk": "longsword",
   "fields": {
-    "name": "Longsword",
     "document": "srd",
     "damage_type": "slashing",
     "damage_dice": "1d8",
@@ -503,7 +483,6 @@
   "model": "api_v2.weapon",
   "pk": "mace",
   "fields": {
-    "name": "Mace",
     "document": "srd",
     "damage_type": "bludgeoning",
     "damage_dice": "1d6",
@@ -528,7 +507,6 @@
   "model": "api_v2.weapon",
   "pk": "maul",
   "fields": {
-    "name": "Maul",
     "document": "srd",
     "damage_type": "bludgeoning",
     "damage_dice": "2d6",
@@ -553,7 +531,6 @@
   "model": "api_v2.weapon",
   "pk": "morningstar",
   "fields": {
-    "name": "Morningstar",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d8",
@@ -578,7 +555,6 @@
   "model": "api_v2.weapon",
   "pk": "net",
   "fields": {
-    "name": "Net",
     "document": "srd",
     "damage_type": "bludgeoning",
     "damage_dice": "0",
@@ -603,7 +579,6 @@
   "model": "api_v2.weapon",
   "pk": "pike",
   "fields": {
-    "name": "Pike",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d10",
@@ -628,7 +603,6 @@
   "model": "api_v2.weapon",
   "pk": "quarterstaff",
   "fields": {
-    "name": "Quarterstaff",
     "document": "srd",
     "damage_type": "bludgeoning",
     "damage_dice": "1d6",
@@ -653,7 +627,6 @@
   "model": "api_v2.weapon",
   "pk": "rapier",
   "fields": {
-    "name": "Rapier",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d8",
@@ -678,7 +651,6 @@
   "model": "api_v2.weapon",
   "pk": "scimitar",
   "fields": {
-    "name": "Scimitar",
     "document": "srd",
     "damage_type": "slashing",
     "damage_dice": "1d6",
@@ -703,7 +675,6 @@
   "model": "api_v2.weapon",
   "pk": "shortbow",
   "fields": {
-    "name": "Shortbow",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d6",
@@ -728,7 +699,6 @@
   "model": "api_v2.weapon",
   "pk": "shortsword",
   "fields": {
-    "name": "Shortsword",
     "document": "srd",
     "damage_type": "slashing",
     "damage_dice": "1d6",
@@ -753,7 +723,6 @@
   "model": "api_v2.weapon",
   "pk": "sickle",
   "fields": {
-    "name": "Sickle",
     "document": "srd",
     "damage_type": "slashing",
     "damage_dice": "1d4",
@@ -778,7 +747,6 @@
   "model": "api_v2.weapon",
   "pk": "sling",
   "fields": {
-    "name": "Sling",
     "document": "srd",
     "damage_type": "bludgeoning",
     "damage_dice": "1d4",
@@ -803,7 +771,6 @@
   "model": "api_v2.weapon",
   "pk": "spear",
   "fields": {
-    "name": "Spear",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d6",
@@ -828,7 +795,6 @@
   "model": "api_v2.weapon",
   "pk": "trident",
   "fields": {
-    "name": "Trident",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d6",
@@ -853,7 +819,6 @@
   "model": "api_v2.weapon",
   "pk": "warhammer",
   "fields": {
-    "name": "Warhammer",
     "document": "srd",
     "damage_type": "bludgeoning",
     "damage_dice": "1d8",
@@ -878,7 +843,6 @@
   "model": "api_v2.weapon",
   "pk": "warpick",
   "fields": {
-    "name": "War Pick",
     "document": "srd",
     "damage_type": "piercing",
     "damage_dice": "1d8",
@@ -903,7 +867,6 @@
   "model": "api_v2.weapon",
   "pk": "whip",
   "fields": {
-    "name": "Whip",
     "document": "srd",
     "damage_type": "slashing",
     "damage_dice": "1d4",

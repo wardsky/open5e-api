@@ -3,11 +3,10 @@
 from django.db import models
 from django.core.validators import MinValueValidator
 
-from .abstracts import HasName
+from .abstracts import Localized, HasName
 from .document import FromDocument
 
-
-class Weapon(HasName, FromDocument):
+class Weapon(FromDocument):
     """
     This model represents types of weapons.
 
@@ -112,7 +111,7 @@ A value of 0 means that the weapon cannot be used for a long ranged attack.""")
         null=False,
         default=False,
         help_text='If the weapon is improvised.')
-    
+
     @property
     def is_versatile(self):
         return self.versatile_dice != str(0)
@@ -129,21 +128,21 @@ A value of 0 means that the weapon cannot be used for a long ranged attack.""")
     @property
     def ranged_attack_possible(self):
         # Only ammunition or throw weapons can make ranged attacks.
-        return self.ammunition or self.thrown 
+        return self.ammunition or self.thrown
 
     @property
     def range_melee(self):
         return self.range_reach
-    
+
     @property
     def is_reach(self):
         # A weapon with a longer reach than the default has the reach property.
-        return self.range_reach > 5 
+        return self.range_reach > 5
 
     @property
     def properties(self):
         properties = []
-        
+
         range_desc = "(range {}/{})".format(
             str(self.range_normal),
             str(self.range_long))
@@ -170,5 +169,9 @@ A value of 0 means that the weapon cannot be used for a long ranged attack.""")
             properties.append("versatile {}".format(versatile_desc))
         if self.is_reach:
             properties.append("reach")
-       
+
         return properties
+
+
+class WeaponText(Localized, HasName):
+    weapon = models.ForeignKey(Weapon, on_delete=models.CASCADE)

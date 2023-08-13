@@ -7,11 +7,14 @@ from .abstracts import HasDescription
 from .abstracts import Object
 
 from .item import Item
+from .item import ItemText
 from .item import ItemSet
 
 from .armor import Armor
+from .armor import ArmorText
 
 from .weapon import Weapon
+from .weapon import WeaponText
 
 from .document import Document
 from .document import License

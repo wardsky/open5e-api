@@ -1,0 +1,335 @@
+[
+{
+  "model": "api_v2.weapontext",
+  "pk": "battleaxe_en",
+  "fields": {
+    "weapon": "battleaxe",
+    "lang": "en",
+    "name": "Battleaxe"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "blowgun_en",
+  "fields": {
+    "weapon": "blowgun",
+    "lang": "en",
+    "name": "Blowgun"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "club_en",
+  "fields": {
+    "weapon": "club",
+    "lang": "en",
+    "name": "Club"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "crossbow-hand_en",
+  "fields": {
+    "weapon": "crossbow-hand",
+    "lang": "en",
+    "name": "Crossbow, hand"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "crossbow-heavy_en",
+  "fields": {
+    "weapon": "crossbow-heavy",
+    "lang": "en",
+    "name": "Crossbow, heavy"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "crossbow-light_en",
+  "fields": {
+    "weapon": "crossbow-light",
+    "lang": "en",
+    "name": "Crossbow, light"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "dagger_en",
+  "fields": {
+    "weapon": "dagger",
+    "lang": "en",
+    "name": "Dagger"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "dart_en",
+  "fields": {
+    "weapon": "dart",
+    "lang": "en",
+    "name": "Dart"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "flail_en",
+  "fields": {
+    "weapon": "flail",
+    "lang": "en",
+    "name": "Flail"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "glaive_en",
+  "fields": {
+    "weapon": "glaive",
+    "lang": "en",
+    "name": "Glaive"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "greataxe_en",
+  "fields": {
+    "weapon": "greataxe",
+    "lang": "en",
+    "name": "Greataxe"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "greatclub_en",
+  "fields": {
+    "weapon": "greatclub",
+    "lang": "en",
+    "name": "Greatclub"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "greatsword_en",
+  "fields": {
+    "weapon": "greatsword",
+    "lang": "en",
+    "name": "Greatsword"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "halberd_en",
+  "fields": {
+    "weapon": "halberd",
+    "lang": "en",
+    "name": "Halberd"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "handaxe_en",
+  "fields": {
+    "weapon": "handaxe",
+    "lang": "en",
+    "name": "Handaxe"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "javelin_en",
+  "fields": {
+    "weapon": "javelin",
+    "lang": "en",
+    "name": "Javelin"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "lance_en",
+  "fields": {
+    "weapon": "lance",
+    "lang": "en",
+    "name": "Lance"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "light-hammer_en",
+  "fields": {
+    "weapon": "light-hammer",
+    "lang": "en",
+    "name": "Light hammer"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "longbow_en",
+  "fields": {
+    "weapon": "longbow",
+    "lang": "en",
+    "name": "Longbow"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "longsword_en",
+  "fields": {
+    "weapon": "longsword",
+    "lang": "en",
+    "name": "Longsword"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "mace_en",
+  "fields": {
+    "weapon": "mace",
+    "lang": "en",
+    "name": "Mace"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "maul_en",
+  "fields": {
+    "weapon": "maul",
+    "lang": "en",
+    "name": "Maul"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "morningstar_en",
+  "fields": {
+    "weapon": "morningstar",
+    "lang": "en",
+    "name": "Morningstar"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "net_en",
+  "fields": {
+    "weapon": "net",
+    "lang": "en",
+    "name": "Net"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "pike_en",
+  "fields": {
+    "weapon": "pike",
+    "lang": "en",
+    "name": "Pike"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "quarterstaff_en",
+  "fields": {
+    "weapon": "quarterstaff",
+    "lang": "en",
+    "name": "Quarterstaff"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "rapier_en",
+  "fields": {
+    "weapon": "rapier",
+    "lang": "en",
+    "name": "Rapier"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "scimitar_en",
+  "fields": {
+    "weapon": "scimitar",
+    "lang": "en",
+    "name": "Scimitar"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "shortbow_en",
+  "fields": {
+    "weapon": "shortbow",
+    "lang": "en",
+    "name": "Shortbow"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "shortsword_en",
+  "fields": {
+    "weapon": "shortsword",
+    "lang": "en",
+    "name": "Shortsword"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "sickle_en",
+  "fields": {
+    "weapon": "sickle",
+    "lang": "en",
+    "name": "Sickle"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "sling_en",
+  "fields": {
+    "weapon": "sling",
+    "lang": "en",
+    "name": "Sling"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "spear_en",
+  "fields": {
+    "weapon": "spear",
+    "lang": "en",
+    "name": "Spear"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "trident_en",
+  "fields": {
+    "weapon": "trident",
+    "lang": "en",
+    "name": "Trident"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "warhammer_en",
+  "fields": {
+    "weapon": "warhammer",
+    "lang": "en",
+    "name": "Warhammer"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "warpick_en",
+  "fields": {
+    "weapon": "warpick",
+    "lang": "en",
+    "name": "War Pick"
+  }
+},
+{
+  "model": "api_v2.weapontext",
+  "pk": "whip_en",
+  "fields": {
+    "weapon": "whip",
+    "lang": "en",
+    "name": "Whip"
+  }
+}
+]

@@ -7,11 +7,11 @@ from django.urls import reverse
 from api.models import GameContent
 from .weapon import Weapon
 from .armor import Armor
-from .abstracts import Object, HasName, HasDescription
+from .abstracts import Object, Localized, HasName, HasDescription
 from .document import FromDocument
 
 
-class Item(Object, HasDescription, FromDocument):
+class Item(Object, FromDocument):
     """
     This is the model for an Item, which is an object that can be used.
 
@@ -66,7 +66,7 @@ class Item(Object, HasDescription, FromDocument):
         choices=CATEGORY_CHOICES,
         max_length=100,
         help_text='The category of the magic item.')
-    # Magic item types that should probably be filterable: 
+    # Magic item types that should probably be filterable:
     # Staff, Rod, Scroll, Ring, Potion, Ammunition, Wand = category
 
     requires_attunement = models.BooleanField(
@@ -93,9 +93,13 @@ class Item(Object, HasDescription, FromDocument):
             MaxValueValidator(6)],
         help_text='Integer representing the rarity of the object.')
 
-    @property 
+    @property
     def is_magic_item(self):
         return self.rarity is not None
+
+
+class ItemText(Localized, HasName, HasDescription):
+    item = models.ForeignKey(Item, on_delete=models.CASCADE)
 
 
 class ItemSet(HasName, HasDescription, FromDocument):

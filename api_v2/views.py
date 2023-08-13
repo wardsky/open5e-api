@@ -1,3 +1,4 @@
+from django.db.models import Subquery, OuterRef
 from django_filters import FilterSet
 from django_filters import BooleanFilter
 from django_filters.rest_framework import DjangoFilterBackend
@@ -16,8 +17,6 @@ class ItemFilterSet(FilterSet):
         model = models.Item
         fields = {
             'key': ['in', 'iexact', 'exact' ],
-            'name': ['iexact', 'exact'],
-            'desc': ['icontains'],
             'cost': ['exact', 'range', 'gt', 'gte', 'lt', 'lte'],
             'weight': ['exact', 'range', 'gt', 'gte', 'lt', 'lte'],
             'rarity': ['exact', 'in', ],
@@ -33,7 +32,14 @@ class ItemViewSet(viewsets.ReadOnlyModelViewSet):
 
     retrieve: API endpoint for returning a particular item.
     """
-    queryset = models.Item.objects.all().order_by('pk')
+    text_queryset = models.ItemText.objects.filter(
+        item=OuterRef('pk'),
+        lang='en',
+    )
+    queryset = models.Item.objects.annotate(
+        name=Subquery(text_queryset.values('name')[:1]),
+        desc=Subquery(text_queryset.values('desc')[:1]),
+    ).order_by('pk')
     serializer_class = serializers.ItemSerializer
     filterset_class = ItemFilterSet
 
@@ -106,7 +112,6 @@ class WeaponFilterSet(FilterSet):
         model = models.Weapon
         fields = {
             'key': ['in', 'iexact', 'exact' ],
-            'name': ['iexact', 'exact'],
             'document__key': ['in','iexact','exact'],
             'damage_type': ['in','iexact','exact'],
             'damage_dice': ['in','iexact','exact'],
@@ -133,7 +138,13 @@ class WeaponViewSet(viewsets.ReadOnlyModelViewSet):
     list: API endpoint for returning a list of weapons.
     retrieve: API endpoint for returning a particular weapon.
     """
-    queryset = models.Weapon.objects.all().order_by('pk')
+    text_queryset = models.WeaponText.objects.filter(
+        weapon=OuterRef('pk'),
+        lang='en',
+    )
+    queryset = models.Weapon.objects.annotate(
+        name=Subquery(text_queryset.values('name')[:1]),
+    ).order_by('pk')
     serializer_class = serializers.WeaponSerializer
     filterset_class = WeaponFilterSet
 
@@ -144,7 +155,6 @@ class ArmorFilterSet(FilterSet):
         model = models.Armor
         fields = {
             'key': ['in', 'iexact', 'exact' ],
-            'name': ['iexact', 'exact'],
             'document__key': ['in','iexact','exact'],
             'grants_stealth_disadvantage': ['exact'],
             'strength_score_required': ['exact','lt','lte','gt','gte'],
@@ -160,6 +170,12 @@ class ArmorViewSet(viewsets.ReadOnlyModelViewSet):
     list: API endpoint for returning a list of armor.
     retrieve: API endpoint for returning a particular armor.
     """
-    queryset = models.Armor.objects.all().order_by('pk')
+    text_queryset = models.ArmorText.objects.filter(
+        armor=OuterRef('pk'),
+        lang='en',
+    )
+    queryset = models.Armor.objects.all().annotate(
+        name=Subquery(text_queryset.values('name')[:1]),
+    ).order_by('pk')
     serializer_class = serializers.ArmorSerializer
     filterset_class = ArmorFilterSet

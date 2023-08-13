@@ -17,7 +17,7 @@ class FromDocumentModelAdmin(admin.ModelAdmin):
 
 
 class ItemModelAdmin(admin.ModelAdmin):
-    list_display = ['key','category','name']
+    list_display = ['key','category']
 
 admin.site.register(Weapon, admin_class=FromDocumentModelAdmin)
 admin.site.register(Armor, admin_class=FromDocumentModelAdmin)

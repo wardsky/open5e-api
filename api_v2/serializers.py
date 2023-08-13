@@ -4,7 +4,7 @@ from api_v2 import models
 
 
 class GameContentSerializer(serializers.HyperlinkedModelSerializer):
-    
+
     # Adding dynamic "fields" qs parameter.
     def __init__(self, *args, **kwargs):
         # Add default fields variable.
@@ -32,7 +32,7 @@ class GameContentSerializer(serializers.HyperlinkedModelSerializer):
                         # Limited to 1 and 2 for now.
                         self.Meta.depth = depth_value
                         # Depth does not reset by default on subsequent requests with malformed urls.
-                    else: 
+                    else:
                         self.Meta.depth = 0
                 except ValueError:
                     pass  # it was not castable to an int.
@@ -78,6 +78,7 @@ class DocumentSerializer(serializers.HyperlinkedModelSerializer):
 class ArmorSerializer(GameContentSerializer):
     key = serializers.ReadOnlyField()
     ac_display = serializers.ReadOnlyField()
+    name = serializers.ReadOnlyField()
 
     class Meta:
         model = models.Armor
@@ -86,6 +87,7 @@ class ArmorSerializer(GameContentSerializer):
 
 class WeaponSerializer(GameContentSerializer):
     key = serializers.ReadOnlyField()
+    name = serializers.ReadOnlyField()
     is_versatile = serializers.ReadOnlyField()
     is_martial = serializers.ReadOnlyField()
     is_melee = serializers.ReadOnlyField()
@@ -101,6 +103,8 @@ class WeaponSerializer(GameContentSerializer):
 
 class ItemSerializer(GameContentSerializer):
     key = serializers.ReadOnlyField()
+    name = serializers.ReadOnlyField()
+    desc = serializers.ReadOnlyField()
     is_magic_item = serializers.ReadOnlyField()
     weapon = WeaponSerializer(read_only=True, context={'request': {}})
     armor = ArmorSerializer(read_only=True, context={'request': {}})

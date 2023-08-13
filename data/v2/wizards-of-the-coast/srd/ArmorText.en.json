@@ -1,0 +1,110 @@
+[
+{
+  "model": "api_v2.armortext",
+  "pk": "breastplate_en",
+  "fields": {
+    "armor": "breastplate",
+    "lang": "en",
+    "name": "Breastplate"
+  }
+},
+{
+  "model": "api_v2.armortext",
+  "pk": "chain-mail_en",
+  "fields": {
+    "armor": "chain-mail",
+    "lang": "en",
+    "name": "Chain mail"
+  }
+},
+{
+  "model": "api_v2.armortext",
+  "pk": "chain-shirt_en",
+  "fields": {
+    "armor": "chain-shirt",
+    "lang": "en",
+    "name": "Chain shirt"
+  }
+},
+{
+  "model": "api_v2.armortext",
+  "pk": "half-plate_en",
+  "fields": {
+    "armor": "half-plate",
+    "lang": "en",
+    "name": "Half plate"
+  }
+},
+{
+  "model": "api_v2.armortext",
+  "pk": "hide_en",
+  "fields": {
+    "armor": "hide",
+    "lang": "en",
+    "name": "Hide"
+  }
+},
+{
+  "model": "api_v2.armortext",
+  "pk": "leather_en",
+  "fields": {
+    "armor": "leather",
+    "lang": "en",
+    "name": "Leather"
+  }
+},
+{
+  "model": "api_v2.armortext",
+  "pk": "padded_en",
+  "fields": {
+    "armor": "padded",
+    "lang": "en",
+    "name": "Padded"
+  }
+},
+{
+  "model": "api_v2.armortext",
+  "pk": "plate_en",
+  "fields": {
+    "armor": "plate",
+    "lang": "en",
+    "name": "Plate"
+  }
+},
+{
+  "model": "api_v2.armortext",
+  "pk": "ring-mail_en",
+  "fields": {
+    "armor": "ring-mail",
+    "lang": "en",
+    "name": "Ring mail"
+  }
+},
+{
+  "model": "api_v2.armortext",
+  "pk": "scale-mail_en",
+  "fields": {
+    "armor": "scale-mail",
+    "lang": "en",
+    "name": "Scale mail"
+  }
+},
+{
+  "model": "api_v2.armortext",
+  "pk": "splint_en",
+  "fields": {
+    "armor": "splint",
+    "lang": "en",
+    "name": "Splint"
+  }
+},
+{
+  "model": "api_v2.armortext",
+  "pk": "studded-leather_en",
+  "fields": {
+    "armor": "studded-leather",
+    "lang": "en",
+    "name": "Studded leather"
+  }
+}
+]

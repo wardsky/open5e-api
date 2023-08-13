@@ -2,14 +2,14 @@
 
 
 from django.db import models
-from .abstracts import HasName, HasDescription
+from .abstracts import Localized, HasName
 from .document import FromDocument
 
 
-class Armor(HasName, FromDocument):
+class Armor(FromDocument):
     """
     This is the model for an armor.
-    
+
     This does not represent the armor set itself, because that would be an
     item. Only the unique attributes of a type of armor are here. An item
     that is armor would link to this model instance.
@@ -53,3 +53,7 @@ class Armor(HasName, FromDocument):
 
     class Meta:
         verbose_name_plural = "armor"
+
+
+class ArmorText(Localized, HasName):
+    armor = models.ForeignKey(Armor, on_delete=models.CASCADE)
